@@ -1,3 +1,43 @@
+html{
+    max-width: 1920px;
+    min-width: 340px;
+}
 .secao{
     height: 600px;
+    margin: auto;
+}
+#menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px 18px black;
+}
+a{
+    text-decoration: none;
+}
+#menu ul{
+    margin: auto;
+    padding: 0px;
+    justify-content: center;
+}
+#menu ul li{
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+#menu ul li:hover{
+    background-color: black;
+    color: white;
+}
+:hover{
+    transition: 1s;
+}
+::after{
+    transition: 1s;
 }
