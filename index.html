@@ -10,8 +10,18 @@
   </head>
   <body>
     <div id="cabecalho">
-      <div id="menu">
+      <div id="menu-normal" class="menu">
         <ul>
+          <a href="#home"><li>HOME</li></a>
+          <a href="#sobre"><li>SOBRE NÓS</li></a>
+          <a href="#processo"><li>NOSSO PROCESSO</li></a>
+          <a href="#clientes"><li>NOSSOS CLIENTES</li></a>
+          <a href="#contato"><li>CONTATO</li></a>
+        </ul>
+      </div>
+      <div id="menu-responsivo" class="menu" onclick="menuActive()">
+        <img src="images/menu.png" alt="Icone do Menu" id="icone-menu">
+        <ul class="ul-menu-responsivo">
           <a href="#home"><li>HOME</li></a>
           <a href="#sobre"><li>SOBRE NÓS</li></a>
           <a href="#processo"><li>NOSSO PROCESSO</li></a>

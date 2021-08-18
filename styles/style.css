@@ -1,16 +1,45 @@
 html{
     max-width: 1920px;
     min-width: 340px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .secao{
     height: 600px;
     margin: auto;
+    padding-top: 50px;
 }
-#menu{
+#menu-responsivo{
+    display: none;
+    margin: auto;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    padding: 0%;
+    transition:  width 1s, height 1s;
+}
+#menu-responsivo ul{
+    display: none;
+}
+#menu-responsivo ul li{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+#menu-responsivo ul li:hover{
+    background-color: gray;
+    color: whitesmoke;
+}
+#icone-menu:hover{
+    cursor: pointer;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.menu{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: black;
     padding: 0px;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,25 +48,28 @@ html{
 a{
     text-decoration: none;
 }
-#menu ul{
+.menu ul{
     margin: auto;
     padding: 0px;
-    justify-content: center;
 }
-#menu ul li{
+.menu ul li{
     display: inline-block;
-    justify-content: center;
     padding: 10px;
-    color: white;
+    color: gray;
     font-weight: bolder;
 }
-#menu ul li:hover{
+.menu ul li:hover{
     background-color: black;
     color: white;
 }
 :hover{
     transition: 1s;
 }
-::after{
-    transition: 1s;
+@media screen and (max-width: 700px) {
+    #menu-normal{
+        display: none;
+    }
+    #menu-responsivo{
+        display: block;
+    }
 }
