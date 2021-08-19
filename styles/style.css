@@ -95,6 +95,10 @@ a{
 }
 #home span{
     font-size: 100pt;
+    margin: 0px;
+    padding: 0px;
+    height: min-content;
+    width: fit-content;
 }
 #logo-header{
     position: absolute;
@@ -102,12 +106,28 @@ a{
     left: 0px;
     width: 150px;
 }
-@media screen and (max-width: 700px) {
+#logo{
+    box-shadow: 10px 10px 50px black;
+}
+@media only screen and (max-width: 1000px){
+    #home span{
+        font-size: 80pt;
+    }
+}
+@media only screen and (max-width: 800px) {
     #menu-normal{
         display: none;
     }
     #menu-responsivo{
         display: block;
+    }
+    #home span{
+        font-size: 60pt;
+    }
+}
+@media only screen and (max-width: 720px){
+    #home span{
+        font-size: 60pt;
     }
     #home{
         flex-direction: column;
