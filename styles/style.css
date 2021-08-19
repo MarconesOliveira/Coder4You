@@ -1,7 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 html{
     max-width: 1920px;
     min-width: 340px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
 }
 .secao{
     height: 600px;
@@ -30,6 +35,9 @@ html{
     background-color: gray;
     color: whitesmoke;
 }
+#icone-menu{
+    transition: 1s;
+}
 #icone-menu:hover{
     cursor: pointer;
     -webkit-transform: rotate(360deg);
@@ -39,7 +47,7 @@ html{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 0px;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -57,13 +65,42 @@ a{
     padding: 10px;
     color: gray;
     font-weight: bolder;
+    transition: 1s;
 }
 .menu ul li:hover{
     background-color: black;
     color: white;
 }
-:hover{
-    transition: 1s;
+#home{
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#home *{
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+#home div{
+    margin: auto;
+    max-width: 50%;
+}
+#home span{
+    font-size: 100pt;
+}
+#logo-header{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 150px;
 }
 @media screen and (max-width: 700px) {
     #menu-normal{
@@ -71,5 +108,17 @@ a{
     }
     #menu-responsivo{
         display: block;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #home div{
+        max-width: 90%;
+    }
+    #logo-header{
+        display: none;
+    }
+    .secao{
+        height: auto;
     }
 }
