@@ -141,6 +141,36 @@ a{
     }
 }
 @media screen {
+    #sobre{
+        text-align: justify;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: auto;
+        width: auto;
+        padding: 20px;
+        border: 2px solid #646262;
+        border-radius: 7px;
+        border-right: 17px solid #646262;
+        color: lavenderblush;
+        background-color: #07070e;
+        
+       
+        
+    }
+    #sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: auto;
+       
+    }
+}
+@media screen {
     #processo{
         text-align: justify;
         margin: auto;
@@ -177,7 +207,7 @@ a{
       left: 0;
     }
 
-    #clientes{
+    #processo{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -208,6 +238,15 @@ a{
        
         
     }
+    #clientes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: auto;
+       
+    }
     .holder {
         display: flex;
         justify-content: center;
@@ -226,15 +265,7 @@ a{
       left: 0;
     }
 
-    #clientes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-        width: auto;
-       
-    }
+    
 }
 
 
