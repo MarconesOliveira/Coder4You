@@ -139,5 +139,77 @@ a{
     #logo-header{
         display: none;
     }
-    
 }
+
+
+@media only screen {
+    
+    #contato{
+        background-color: #101011;
+    }
+     
+    .form{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 400px;
+        padding: 20px;
+        border: 2px solid #020202;
+        border-radius: 7px;
+        border-right: 17px solid #020202;
+        background-color: #ababac;
+        
+    }
+    .form2 form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 350px;
+       
+    }
+    .form2 form label,
+    .form2 form input{
+        margin-bottom: 10px;
+    }
+    .form2 form label{
+        font-size: 18px;
+    }
+    .form2 form input[type="text"],
+    .form2 form input[type="email"],
+    .form2 form input[type="password"]{
+        width: 100%;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid #26353e;
+        font-size: 16px;
+        outline: none;
+        padding-left: 5px;
+    }
+    .form2 textarea{
+        width: 100%;
+        height: 200px;
+        resize: none;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        margin-bottom: 10px;
+    }
+    .form2 form input[type="submit"]{
+        width: 50%;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: #020202;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+    
