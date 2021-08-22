@@ -338,5 +338,68 @@ a{
         border-radius: 3px;
         cursor: pointer;
     }
+    @media screen {
+        
+    
+    
+    #rodape{
+       backface-visibility: hidden;
+       background-image: url(../images/background1.jpg);
+    }
+     
+    #rodape{
+        color: lavenderblush;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:auto;
+        width: auto;
+        padding: 120px;
+        border: 2px solid #020202;
+        border-radius: 17px;
+        border-right: 17px solid #020202;
+        background-color: #ababac;
+        
+        
+    }
+
+    #rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: auto;
+       
+    } 
+    .holder {
+        display: flex;
+        justify-content: center;
+    }
+    .imagem {
+      
+      position: relative;
+      text-align: center;
+
+    }
+    #teste{position:relative;top:0}
+    #teste:hover{top:-4px;box-shadow:0 4px 4px #999;
+       transition: all .2s ease-in-out}
+    .imagem::after {
+      content: attr(data-title); /* estilo que coloco a legenda no lugar */
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+      left: 0;
+    }
+    
+
+ }
+
+ 
+
+
 }
     
