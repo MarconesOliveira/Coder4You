@@ -131,6 +131,7 @@ a{
     }
     #home{
         flex-direction: column;
+        height: auto;
     }
     #home div{
         max-width: 90%;
@@ -138,7 +139,5 @@ a{
     #logo-header{
         display: none;
     }
-    .secao{
-        height: auto;
-    }
+    
 }
