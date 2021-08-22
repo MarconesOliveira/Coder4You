@@ -140,6 +140,54 @@ a{
         display: none;
     }
 }
+@media screen {
+
+    #clientes{
+        text-align: justify;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: auto;
+        width: auto;
+        padding: 20px;
+        border: 2px solid #020202;
+        border-radius: 7px;
+        border-right: 17px solid #020202;
+        background-color: #464649;
+        
+       
+        
+    }
+    .holder {
+        display: flex;
+        justify-content: center;
+    }
+    .imagem {
+      width: 200px;
+      margin: 10px;
+      position: relative;
+      text-align: center;
+    }
+    .imagem::after {
+      content: attr(data-title); /* estilo que coloco a legenda no lugar */
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+      left: 0;
+    }
+
+    #clientes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: auto;
+       
+    }
+}
 
 
 @media only screen {
