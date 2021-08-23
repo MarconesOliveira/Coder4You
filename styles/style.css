@@ -7,11 +7,13 @@ html{
     min-width: 340px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
+    margin: 0;
 }
 .secao{
     height: 600px;
     margin: auto;
     padding-top: 50px;
+    min-height: fit-content;
 }
 #menu-responsivo{
     display: none;
@@ -121,8 +123,6 @@ a{
         width: auto;
         padding: 20px;
         border: 2px solid #646262;
-        border-radius: 7px;
-        border-right: 17px solid #646262;
         color: lavenderblush;
         color: white;
         background-image: url("../images/background.jpg");
@@ -144,24 +144,6 @@ a{
     }
 }
 @media screen {
-    #processo{
-        text-align: justify;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: auto;
-        width: auto;
-        padding: 20px;
-        border: 2px solid #dcaeae4b;
-        border-radius: 7px;
-        border-right: 17px solid #d1caca;
-        background-color: #9d9da0;
-        
-       
-        
-    }
     .holder {
         display: flex;
         justify-content: center;
@@ -191,44 +173,34 @@ a{
         background-image: url("../images/background3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        height: fit-content;
+        min-height: 600px;
     }
     
 }
 @media screen {
-
     #clientes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: justify;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: auto;
-        width: auto;
-        padding: 20px;
-        border: 2px solid #020202;
-        border-radius: 7px;
-        border-right: 17px solid #020202;
-        background-color: #464649;
-        
-       
-        
-    }
-    #clientes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         padding: 20px;
         width: auto;
         color: white;
         background-image: url("../images/background4.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        min-height: 600px;
+        height: fit-content;
+    }
+    #clientes div{
+        padding: 20px;;
     }
     .holder {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .imagem {
       width: 200px;
@@ -255,6 +227,8 @@ a{
         background-image: url("../images/background6.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        min-height: fit-content;
+        height: fit-content;
     }
      
     .form{
@@ -264,13 +238,10 @@ a{
         align-items: center;
         flex-direction: column;
         margin-top: 30px;
-        width: 400px;
+        width: auto;
+        max-width: 300px;
         padding: 20px;
         border: 2px solid #020202;
-        border-radius: 7px;
-        border-right: 17px solid #020202;
-        background-color: #ababac;
-        
     }
     .form2 form{
         display: flex;
@@ -278,7 +249,7 @@ a{
         align-items: center;
         flex-direction: column;
         padding: 20px;
-        width: 350px;
+        width: 100%;
        
     }
     .form2 form label,
@@ -340,11 +311,6 @@ a{
         width: auto;
         padding: 120px;
         border: 2px solid #020202;
-        border-radius: 17px;
-        border-right: 17px solid #020202;
-        background-color: #ababac;
-        
-        
     }
 
     #rodape{
@@ -359,6 +325,7 @@ a{
     .holder {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .imagem {
       
@@ -401,6 +368,9 @@ a{
     }
     #sobre{
         flex-direction: column;
+    }
+    .holder{
+
     }
 }
 @media only screen and (max-width: 720px){
