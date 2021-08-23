@@ -109,37 +109,6 @@ a{
 #logo{
     box-shadow: 10px 10px 50px black;
 }
-@media only screen and (max-width: 1000px){
-    #home span{
-        font-size: 80pt;
-    }
-}
-@media only screen and (max-width: 800px) {
-    #menu-normal{
-        display: none;
-    }
-    #menu-responsivo{
-        display: block;
-    }
-    #home span{
-        font-size: 60pt;
-    }
-}
-@media only screen and (max-width: 720px){
-    #home span{
-        font-size: 60pt;
-    }
-    #home{
-        flex-direction: column;
-        height: auto;
-    }
-    #home div{
-        max-width: 90%;
-    }
-    #logo-header{
-        display: none;
-    }
-}
 @media screen {
     #sobre{
         text-align: justify;
@@ -155,19 +124,23 @@ a{
         border-radius: 7px;
         border-right: 17px solid #646262;
         color: lavenderblush;
-        background-color: #07070e;
-        
+        color: white;
+        background-image: url("../images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
        
         
     }
     #sobre{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        margin: auto;
+    }
+    #sobre p{
         padding: 20px;
-        width: auto;
-       
+        max-width: 600px;
     }
 }
 @media screen {
@@ -214,7 +187,10 @@ a{
         flex-direction: column;
         padding: 20px;
         width: auto;
-       
+        color: white;
+        background-image: url("../images/background3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
 }
@@ -245,7 +221,10 @@ a{
         flex-direction: column;
         padding: 20px;
         width: auto;
-       
+        color: white;
+        background-image: url("../images/background4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .holder {
         display: flex;
@@ -272,7 +251,10 @@ a{
 @media only screen {
     
     #contato{
-        background-color: #101011;
+        color: white;
+        background-image: url("../images/background6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
      
     .form{
@@ -402,4 +384,37 @@ a{
 
 
 }
-    
+@media only screen and (max-width: 1000px){
+    #home span{
+        font-size: 80pt;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #menu-normal{
+        display: none;
+    }
+    #menu-responsivo{
+        display: block;
+    }
+    #home span{
+        font-size: 60pt;
+    }
+    #sobre{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 720px){
+    #home span{
+        font-size: 60pt;
+    }
+    #home{
+        flex-direction: column;
+        height: auto;
+    }
+    #home div{
+        max-width: 90%;
+    }
+    #logo-header{
+        display: none;
+    }
+}
